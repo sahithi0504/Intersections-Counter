@@ -26,6 +26,27 @@ The key points:
 - Checking for overlap between start/end points of the chords
 - Counting intersections when overlap conditions are met
 
+## Detailed Explanation
+The input is two parallel lists - one containing the radian values for the start and end points of each chord, and one containing identifiers ('s' or 'e') indicating whether each radian value corresponds to a start or end point.
+
+The algorithm first extracts the start and end lists from the input tuple.
+
+It gets the number of chords (n) from the length of the start list. This will be used to iterate through each chord pair.
+
+A counter (count) is initialized to 0 to track intersections.
+
+The input lists are printed for verification.
+
+Then it enters a nested loop to iterate through each chord pair combination:
+
+- For chord i, the start (start_float_i) and end (end_float_i) radians are extracted and converted to floats.
+- For chord j, the start (start_float_j) and end (end_float_j) radians are similarly extracted.
+- An intersection check is done to see if start of chord i is between start and end of chord j, AND vice versa.
+- If true, the counter is incremented and intersection details are printed.
+After checking all chord pairs, the total count is returned.
+
+So in summary, it uses extraction, looping, conversion, checking, incrementing, and printing to iterate through each chord pair, check for intersections, count and output the total intersections.
+
 ## Usage
 
 To use the program:

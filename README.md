@@ -4,7 +4,8 @@ This program counts the number of intersections between chords in a circle.
 
 ## Algorithm
 
-Explanation of how the intersection counting algorithm works:
+How the intersection counting algorithm works:
+
 - The input consists of two parallel lists - one with radian values, one with start/end identifiers
 
 - The algorithm loops through each possible pair of chords
